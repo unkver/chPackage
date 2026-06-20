@@ -112,7 +112,7 @@ void abuttonClicked(Gtk::Window* aboutwindow){
 }
 void installPkg(std::string name, std::string text){
 	std::string install;
-	if (name == "Debian" || name == "Ubuntu" || name == "Linux Mint"){
+	if (name == "Debian GNU/Linux" || name == "Ubuntu" || name == "Linux Mint"){
 		install = "sudo apt-get install -y " + text;
 	}
 	else if (name == "Arch Linux" || name == "CachyOS" || name == "endeavourOS"){
@@ -128,7 +128,7 @@ void installPkg(std::string name, std::string text){
 }
 void removePkg(std::string name, std::string text){
 	std::string remove;
-	if (name == "Debian" || name == "Ubuntu" || name == "Linux Mint"){
+	if (name == "Debian GNU/Linux" || name == "Ubuntu" || name == "Linux Mint"){
 		remove = "sudo apt-get remove -y " + text;
 	}
 	else if (name == "Arch Linux" || name == "CachyOS" || name == "endeavourOS"){
